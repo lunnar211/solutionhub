@@ -4,7 +4,7 @@ Plain, practical how-to guides for everyday problems — PDFs, photos, audio,
 video, business leads, emails, CVs, and online safety. Written in original
 words, tested against the real tools they recommend.
 
-**Live site:** https://solutionhub.vercel.app (deployment handled separately)
+**Live site:** https://solutionhub-two.vercel.app (deployment handled separately)
 
 ## What this is
 

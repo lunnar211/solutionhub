@@ -14,7 +14,7 @@ import sys
 from guides_content import GUIDES
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-SITE_URL = "https://solutionhub.vercel.app"
+SITE_URL = "https://solutionhub-two.vercel.app"
 SITE_NAME = "SolutionHub"
 ADS_TXT_LINE = "google.com, pub-2231619318636842, DIRECT, f08c47fec0942fa"
 

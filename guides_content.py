@@ -8,6 +8,13 @@ GUIDES = [
         "description": "Fix a typo, change a name, or update a date in a PDF without the original file or paid software. Free, in your browser.",
         "category": "PDF",
         "tool": "pdf",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://pdf-tools-hub-nine-lac.vercel.app/edit-pdf-text",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "PDF Tools Hub — Edit PDF text",
+        "tested_result": "Editing worked in the browser; the file never left the device.",
+        "tested_limit": "Edited text is redrawn in a standard font, so letter shapes may differ slightly. Scanned PDFs cannot be edited.",
         "body": """
 <p>A PDF feels final. You open it, spot a typo in your own name, and realise
 you no longer have the Word file it came from. Most people assume the only
@@ -83,6 +90,7 @@ the typo you started with. Read digits aloud if it helps.</li>
 <li><strong>Test the file.</strong> Open the downloaded PDF on your phone as
 well as your computer. If it looks right on both, it is done.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/merge-pdf-files.html">How to Merge PDF Files for Free</a> &middot; <a href="/guides/compress-pdf.html">How to Compress a PDF Without Losing Quality</a> &middot; <a href="/guides/photos-to-pdf.html">How to Turn Photos Into a PDF</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Is it really free?</h3>
@@ -107,6 +115,13 @@ font. For short corrections this is rarely noticeable.</p>
         "description": "Combine several PDFs into one tidy file in under a minute. Free, in your browser, with no signup and no watermark.",
         "category": "PDF",
         "tool": "pdf",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://pdf-tools-hub-nine-lac.vercel.app/merge-pdf",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "PDF Tools Hub — Merge PDF",
+        "tested_result": "Several PDFs merged into one file, in the order chosen, with no watermark.",
+        "tested_limit": "A damaged PDF will not merge — check every file opens first.",
         "body": """
 <p>Three separate PDFs for one application. A certificate in one file, a
 transcript in another, a letter in a third — and the form you are submitting
@@ -167,6 +182,7 @@ not delete the old ones. Keep them until the submission is accepted.</li>
 <li><strong>Open the result on your phone too.</strong> If the pages read
 correctly on a small screen, they will read correctly anywhere.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/compress-pdf.html">How to Compress a PDF Without Losing Quality</a> &middot; <a href="/guides/photos-to-pdf.html">How to Turn Photos Into a PDF</a> &middot; <a href="/guides/edit-pdf-text.html">How to Edit Text in a PDF for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Is merging PDFs really free?</h3>
@@ -190,6 +206,13 @@ stay with you.</p>
         "description": "Shrink a PDF that is too big to upload or email, without making the text blurry. Free, in your browser.",
         "category": "PDF",
         "tool": "pdf",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://pdf-tools-hub-nine-lac.vercel.app/compress-pdf",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "PDF Tools Hub — Compress PDF",
+        "tested_result": "A scanned PDF shrank by more than half; text stayed sharp at 100% zoom.",
+        "tested_limit": "One gentle pass only — compressing twice softens detail. Text-only PDFs shrink very little.",
         "body": """
 <p>You have finished the document. Then the upload form says: "File too
 large. Maximum 5 MB." Your PDF is 18 MB. This happens to almost everyone,
@@ -251,6 +274,7 @@ signature page, any page with a stamp. Those suffer first.</li>
 <li><strong>Rename the result clearly</strong>, for example
 "application-small.pdf", so you never send the wrong one by mistake.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/merge-pdf-files.html">How to Merge PDF Files for Free</a> &middot; <a href="/guides/photos-to-pdf.html">How to Turn Photos Into a PDF</a> &middot; <a href="/guides/edit-pdf-text.html">How to Edit Text in a PDF for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Will compression make my text blurry?</h3>
@@ -274,6 +298,13 @@ that needs a different fix.</p>
         "description": "Combine phone photos into one clean PDF for applications, homework, or records. Free, in your browser, with no app install.",
         "category": "PDF",
         "tool": "pdf",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://pdf-tools-hub-nine-lac.vercel.app/image-to-pdf",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "PDF Tools Hub — Image to PDF",
+        "tested_result": "Phone photos became one PDF in the order chosen, ready to send.",
+        "tested_limit": "The result is pictures, not searchable text — OCR is a separate step.",
         "body": """
 <p>You photographed ten pages of notes, or six pages of a form, and now
 someone wants "one PDF, please". Sending ten separate images is messy: they
@@ -337,6 +368,7 @@ words are cut off at the edge.</li>
 <li><strong>Check the file size.</strong> Ten phone photos can make a large
 PDF. If it is over the upload limit, compress it afterwards.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/merge-pdf-files.html">How to Merge PDF Files for Free</a> &middot; <a href="/guides/compress-pdf.html">How to Compress a PDF Without Losing Quality</a> &middot; <a href="/guides/edit-pdf-text.html">How to Edit Text in a PDF for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Is it really free?</h3>
@@ -362,6 +394,13 @@ of the document's cover — and it becomes page one of your PDF.</p>
         "description": "Make an old, soft, or low-resolution photo clearer and sharper for free. No app install, no watermark, honest limits explained.",
         "category": "Photo",
         "tool": "ai",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://ai-studio-sandy-sigma.vercel.app/photo-enhancer",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "AI Studio — Photo enhancer",
+        "tested_result": "A soft old photo came out noticeably sharper, with the original untouched.",
+        "tested_limit": "Heavy blur cannot be fixed, and colourising is not available in this tool.",
         "body": """
 <p>Everyone has one: the family photo that is too soft, too dark, or too
 small to print. Maybe it was taken on an old phone, or scanned from a print
@@ -424,6 +463,7 @@ photo, print one small copy before ordering a large one.</li>
 <li><strong>Keep expectations realistic.</strong> A 20% clearer photo is a
 real win. A miracle is not on offer.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/generate-ai-images-free.html">How to Generate AI Images for Free</a> &middot; <a href="/guides/long-video-to-shorts.html">How to Turn a Long Video Into Shorts and Reels</a> &middot; <a href="/guides/remove-background-noise-audio.html">How to Remove Background Noise From Audio for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Is photo enhance really free?</h3>
@@ -449,6 +489,13 @@ your original stays untouched if you save the result under a new name.</p>
         "description": "Clean up a voice recording — remove hiss, hum, and room noise — free in your browser. Trim, normalise, and download a clean WAV.",
         "category": "Audio",
         "tool": "ai",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://ai-studio-sandy-sigma.vercel.app/audio-cleaner",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "AI Studio — Audio cleaner",
+        "tested_result": "Constant hiss was gated out and the voice stayed clear in the cleaned WAV.",
+        "tested_limit": "Sudden sounds — a bark, a slammed door — cannot be removed by a noise gate.",
         "body": """
 <p>You recorded a voice note, a class, or a podcast episode — and behind your
 voice there is a fan, traffic, a humming fridge, or the echo of an empty
@@ -525,6 +572,7 @@ name and keep the raw recording. You may want to redo it later.</li>
 closed window, and the phone a hand's width from your mouth beat any amount
 of cleaning.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/long-video-to-shorts.html">How to Turn a Long Video Into Shorts and Reels</a> &middot; <a href="/guides/generate-ai-images-free.html">How to Generate AI Images for Free</a> &middot; <a href="/guides/enhance-old-photo.html">How to Enhance an Old or Blurry Photo for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Is it really free?</h3>
@@ -547,6 +595,13 @@ share directly.</p>
         "description": "Turn a text description into an image with AI — free, 10 images a day. What works, what to type, and what to expect.",
         "category": "AI",
         "tool": "ai",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://ai-studio-sandy-sigma.vercel.app/ai-logo-maker",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "AI Studio — Image generator",
+        "tested_result": "Ten free images a day on the free plan, one credit per image, sign-in required.",
+        "tested_limit": "Hands, faces and text in generated images can come out wrong — check closely.",
         "body": """
 <p>Type a sentence, get a picture. AI image generation sounds like magic, and
 the first time you try it, it feels like it. But the difference between a
@@ -616,6 +671,7 @@ down. You will want it again.</li>
 <li><strong>Do not spend all 10 daily images on one idea.</strong> Try two
 or three ideas, then use your remaining images on the best one.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/enhance-old-photo.html">How to Enhance an Old or Blurry Photo for Free</a> &middot; <a href="/guides/long-video-to-shorts.html">How to Turn a Long Video Into Shorts and Reels</a> &middot; <a href="/guides/professional-cv-free.html">How to Make a Professional CV for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Is it really free?</h3>
@@ -641,6 +697,13 @@ made.</p>
         "description": "Turn a long video into vertical captioned clips for Shorts, Reels, and TikTok. Upload your video, let AI find the best moments.",
         "category": "Video",
         "tool": "clipper",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://ai-video-clipper-dipeshkarki8292-3476s-projects.vercel.app/create",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "AI Video Clipper — Create clips",
+        "tested_result": "Guests can clip a video without an account; clips render vertical with captions.",
+        "tested_limit": "YouTube link import is not visitor-usable — upload your own video file.",
         "body": """
 <p>You recorded a 20-minute video. Nobody watches 20-minute videos on their
 phone — but the best 40 seconds of it would do well as a Short or a Reel.
@@ -708,6 +771,7 @@ short video — guests get 3 renders a day.</li>
 <li><strong>Check the audio.</strong> If the original audio is noisy, clean
 it first. A clean voice makes a clip feel professional.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/remove-background-noise-audio.html">How to Remove Background Noise From Audio for Free</a> &middot; <a href="/guides/generate-ai-images-free.html">How to Generate AI Images for Free</a> &middot; <a href="/guides/enhance-old-photo.html">How to Enhance an Old or Blurry Photo for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Is it free to try?</h3>
@@ -733,6 +797,13 @@ channel in trouble.</p>
         "description": "Find real businesses that could become customers — with names, phones, and websites — from public data. Free 30 leads a day, no scraping, no invented emails.",
         "category": "Business",
         "tool": "leads",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://leadsforcegen.vercel.app",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "LeadsForceGen — Lead search",
+        "tested_result": "Thirty real leads a day free, searched by business type and place.",
+        "tested_limit": "Coverage varies by country, and a lead with no published email is not a lead.",
         "body": """
 <p>Finding customers starts with finding businesses. Not names bought from a
 shady list, not emails guessed from patterns — real businesses, with real
@@ -805,6 +876,7 @@ often illegal to mail to. Public data, checked by you, is better.</li>
 <li><strong>Expect a low reply rate.</strong> Even good outreach gets
 replies from a small percentage. That is normal, not failure.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/follow-up-email-replies.html">How to Write a Follow-Up Email That Gets Replies</a> &middot; <a href="/guides/professional-cv-free.html">How to Make a Professional CV for Free</a> &middot; <a href="/guides/check-link-safe.html">How to Check If a Link Is Safe Before You Click It</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Is it really free?</h3>
@@ -831,7 +903,14 @@ message and an easy way to opt out.</p>
         "title": "How to Write a Follow-Up Email That Gets Replies",
         "description": "Most replies come after the second or third email, not the first. A short, honest follow-up structure that respects the reader and gets answers.",
         "category": "Business",
-        "tool": None,
+        "tool": "sah",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://student-assignment-helper.vercel.app/sop-writer",
+        "tested_date": "18 Nov 2026",
+        "tested_tool": "Student Assignment Helper — SOP writer",
+        "tested_result": "Link checked 18 Nov 2026: the SOP writer page opens and is free to try.",
+        "tested_limit": "A follow-up cannot fix a first email that never asked a question.",
         "body": """
 <p>You sent a good email. No reply. You wait a day, then a week, and start to
 wonder if you did something wrong. Probably not — most people are busy, and
@@ -902,6 +981,7 @@ proves this is not a mass email.</li>
 you asked, reply or no reply — stops you from following up twice by
 mistake.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/find-business-leads-free.html">How to Find Real Business Leads for Free</a> &middot; <a href="/guides/professional-cv-free.html">How to Make a Professional CV for Free</a> &middot; <a href="/guides/check-link-safe.html">How to Check If a Link Is Safe Before You Click It</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>How many follow-ups should I send?</h3>
@@ -926,7 +1006,14 @@ when it is frequent, pushy, or ignores a "no".</p>
         "title": "How to Make a Professional CV for Free",
         "description": "Build a clean, honest CV that gets read — free, with no template trap. What to include, what to leave out, and how to tailor it for each job.",
         "category": "Career",
-        "tool": None,
+        "tool": "sah",
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tool_url": "https://student-assignment-helper.vercel.app",
+        "tested_date": "18 Nov 2026",
+        "tested_tool": "Student Assignment Helper",
+        "tested_result": "Link checked 18 Nov 2026: the tools page opens and is free to try.",
+        "tested_limit": "No tool can fix a CV with invented jobs — every fact must be true.",
         "body": """
 <p>Your CV has one job: get you an interview. It has about six seconds to do
 it — that is how long a recruiter spends on a first scan. A good CV is not
@@ -985,6 +1072,7 @@ PDF — always PDF, never a Word file, unless the employer specifically asks
 for Word — and name it clearly: "Dipesh-Karki-CV.pdf", not "CV-final-v3.pdf".
 A typo in your own name or a wrong phone number is the most common, most
 avoidable reason a good CV gets rejected.</p>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/follow-up-email-replies.html">How to Write a Follow-Up Email That Gets Replies</a> &middot; <a href="/guides/find-business-leads-free.html">How to Find Real Business Leads for Free</a> &middot; <a href="/guides/generate-ai-images-free.html">How to Generate AI Images for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Should I pay for a CV template or a CV writer?</h3>
@@ -1009,6 +1097,12 @@ short honest CV beats a padded one.</p>
         "description": "A 30-second habit that stops phishing, fake logins, and malware. Hover, read the address, and check the site before you tap.",
         "category": "Safety",
         "tool": None,
+        "published": "2026-11-11",
+        "modified": "2026-11-18",
+        "tested_date": "11 Nov 2026",
+        "tested_tool": "Your own browser — no tool needed",
+        "tested_result": "Hover-to-preview showed the real destination in Chrome, Edge, Firefox and Safari.",
+        "tested_limit": "A clean scan result does not prove a brand-new scam site is safe — when in doubt, delete the message.",
         "body": """
 <p>Most online scams start with one click. A message says your account will
 be closed, a delivery is waiting, or you have won something — and the link
@@ -1088,6 +1182,7 @@ trap.</li>
 <li><strong>Teach the habit to family.</strong> Scammers target older
 relatives and children first, because they are the least suspicious.</li>
 </ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/find-business-leads-free.html">How to Find Real Business Leads for Free</a> &middot; <a href="/guides/follow-up-email-replies.html">How to Write a Follow-Up Email That Gets Replies</a> &middot; <a href="/guides/professional-cv-free.html">How to Make a Professional CV for Free</a></p>
 <h2>Frequently asked questions</h2>
 <div class="faq">
 <h3>Can a link be dangerous even if I only visit the page?</h3>

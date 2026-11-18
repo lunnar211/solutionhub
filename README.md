@@ -14,10 +14,19 @@ in the repo root, so any static host can serve it.
 
 ## Pages
 
-- Home (`index.html`) + Guides index (`guides/index.html`)
+- Home (`index.html`, a manual cover + contents index) + Guides index (`guides/index.html`)
 - 12 original guides in `guides/` (700–1200 words each, with steps, tips, and FAQ)
 - About, Contact, Privacy Policy, Terms of Use, Disclaimer
 - `sitemap.xml`, `robots.txt`, `ads.txt` (AdSense publisher verification line)
+- `404.html` + `vercel.json` (clean URLs, security headers) + `assets/og.png` (social share image)
+
+## Design
+
+Repair-manual / workshop-notebook character: paper + ink + teal + gold,
+serif display type, mono step numbers and labels, a "Tested" stamp on every
+guide (date, tool, result, one honest limit), numbered step ledger, ruled
+checklists. No gradients, no glassmorphism, no hero + card grid, no stock
+imagery, no JavaScript.
 
 ## The guides
 
@@ -47,6 +56,13 @@ in the repo root, so any static host can serve it.
 python3 build.py        # regenerates all HTML + sitemap/robots/ads.txt
 python3 -m http.server 8130   # preview at http://127.0.0.1:8130
 ```
+
+The stylesheet is single-sourced: it lives only as the `CSS` string in
+`build.py`, which writes `assets/style.css` on every run. Never hand-edit
+`assets/style.css` — the next build overwrites it. Same for every generated
+HTML file: edit `build.py` / `guides_content.py`, then re-run `build.py`.
+Guide metadata (publish/modified dates, deep-link tool URL, Tested-stamp
+text) lives in each guide's dict in `guides_content.py`.
 
 ## License
 

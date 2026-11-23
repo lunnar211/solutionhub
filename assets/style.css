@@ -60,6 +60,13 @@ li{margin-bottom:6px}
 .contents li.entry p{color:var(--muted);font-size:.95rem;margin:2px 0 0}
 .contents li.entry .tag{margin-left:auto;flex:none}
 .group-head{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:30px 0 0;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+/* --- guides index search: plain filter, no backend --- */
+.guide-search{margin:22px 0 4px}
+.guide-search label{display:block;font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.guide-search input{width:100%;max-width:560px;padding:11px 14px;font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:2px solid var(--ink);border-radius:2px}
+.guide-search input::placeholder{color:var(--muted)}
+.guide-count{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:8px 0 0}
+.guide-empty{margin:24px 0;padding:14px 16px;border:2px solid var(--gold);background:var(--gold-soft);font-weight:600}
 .tag{display:inline-block;font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:#e6f4f2;border:1px solid #c9e8e4;border-radius:999px;padding:3px 10px}
 /* --- guide pages: step ledger, checklist, margin notes --- */
 .guide-meta{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}
@@ -113,7 +120,7 @@ footer.site .fine{margin-top:18px}
   .tested{transform:none}
 }
 @media print{
-  header.site nav.main,.skip,.toolbox .btn,.prevnext{display:none}
+  header.site nav.main,.skip,.toolbox .btn,.prevnext,.guide-search{display:none}
   body{background:#fff}
   main{padding:0}
   a{color:var(--ink)}

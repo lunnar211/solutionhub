@@ -97,6 +97,13 @@ li{margin-bottom:6px}
 .contents li.entry p{color:var(--muted);font-size:.95rem;margin:2px 0 0}
 .contents li.entry .tag{margin-left:auto;flex:none}
 .group-head{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:30px 0 0;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+/* --- guides index search: plain filter, no backend --- */
+.guide-search{margin:22px 0 4px}
+.guide-search label{display:block;font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.guide-search input{width:100%;max-width:560px;padding:11px 14px;font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:2px solid var(--ink);border-radius:2px}
+.guide-search input::placeholder{color:var(--muted)}
+.guide-count{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:8px 0 0}
+.guide-empty{margin:24px 0;padding:14px 16px;border:2px solid var(--gold);background:var(--gold-soft);font-weight:600}
 .tag{display:inline-block;font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:#e6f4f2;border:1px solid #c9e8e4;border-radius:999px;padding:3px 10px}
 /* --- guide pages: step ledger, checklist, margin notes --- */
 .guide-meta{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}
@@ -150,7 +157,7 @@ footer.site .fine{margin-top:18px}
   .tested{transform:none}
 }
 @media print{
-  header.site nav.main,.skip,.toolbox .btn,.prevnext{display:none}
+  header.site nav.main,.skip,.toolbox .btn,.prevnext,.guide-search{display:none}
   body{background:#fff}
   main{padding:0}
   a{color:var(--ink)}
@@ -593,11 +600,18 @@ def main():
                 home_body(guides), "index.html", SITE_URL + "/",
                 json_ld=home_ld, wide=True)
     write("index.html", home)
-    # Guides index — full contents, grouped by problem
+    # Guides index — full contents, grouped by problem, with search/filter
     idx_body = ("<h1>All guides</h1>"
                 f'<p class="lede">{n} practical guides, each tested against the '
                 "tool it recommends. Pick a problem and follow the steps.</p>"
-                + contents_by_category(guides))
+                '<div class="guide-search">'
+                '<label for="guide-search">Search the guides</label>'
+                '<input id="guide-search" type="search" placeholder="Try “PDF”, “CV”, “photo”…" autocomplete="off">'
+                f'<p class="guide-count" id="guide-count" role="status">Showing {n} of {n} guides</p>'
+                "</div>"
+                '<p class="guide-empty" id="guide-empty" hidden>No guide matches that search — try a different word.</p>'
+                + contents_by_category(guides)
+                + '<script src="/assets/guides-search.js" defer></script>')
     write("guides/index.html", page("All Guides | SolutionHub",
           f"Browse all {n} SolutionHub guides: PDFs, photos, audio, video, business leads, emails, CVs and online safety.",
           idx_body, "guides/index.html", SITE_URL + "/guides/", wide=True))
@@ -626,8 +640,9 @@ def main():
          f"{contents_by_category(guides)}"),
         "404.html", SITE_URL + "/404.html", wide=True)
     write("404.html", not_found)
-    # vercel.json: clean URLs + security headers (no CSP conflicts: the site
-    # has zero scripts and zero third-party resources, so 'self' is enough).
+    # vercel.json: clean URLs + security headers. The site has one same-origin
+    # script (assets/guides-search.js, loaded by /guides/) and zero third-party
+    # resources, so default-src 'self' covers it — no 'unsafe-inline' needed.
     vercel = {
         "cleanUrls": True,
         "headers": [{

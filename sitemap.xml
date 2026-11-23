@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://solutionhub-two.vercel.app/</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://solutionhub-two.vercel.app/guides/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/guides/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://solutionhub-two.vercel.app/guides/edit-pdf-text.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://solutionhub-two.vercel.app/guides/merge-pdf-files.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://solutionhub-two.vercel.app/guides/compress-pdf.html</loc><lastmod>2026-11-18</lastmod></url>
@@ -13,10 +13,11 @@
   <url><loc>https://solutionhub-two.vercel.app/guides/find-business-leads-free.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://solutionhub-two.vercel.app/guides/follow-up-email-replies.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://solutionhub-two.vercel.app/guides/professional-cv-free.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://solutionhub-two.vercel.app/guides/check-link-safe.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://solutionhub-two.vercel.app/about.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://solutionhub-two.vercel.app/contact.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://solutionhub-two.vercel.app/privacy.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://solutionhub-two.vercel.app/terms.html</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://solutionhub-two.vercel.app/disclaimer.html</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/guides/check-link-safe.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/guides/check-assignment-for-ai.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/about.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/contact.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/privacy.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/terms.html</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://solutionhub-two.vercel.app/disclaimer.html</loc><lastmod>2026-11-23</lastmod></url>
 </urlset>

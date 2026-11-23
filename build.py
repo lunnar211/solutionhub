@@ -33,7 +33,7 @@ TOOLS = {
     "sah": ("Student Assignment Helper", "https://student-assignment-helper.vercel.app"),
 }
 # Deep links are per guide (g["tool_url"]); TOOLS holds the fallback homepage.
-BUILD_DATE = "2026-11-18"  # dateModified for pages rebuilt by this run
+BUILD_DATE = "2026-11-23"  # dateModified for pages rebuilt by this run
 
 CSS = """/* SolutionHub — repair-manual / workshop-notebook design.
    Single source of truth: this string in build.py generates assets/style.css.
@@ -302,10 +302,15 @@ def guide_page(g, guides):
     idx = guides.index(g)
     prev_g = guides[idx - 1] if idx > 0 else None
     next_g = guides[idx + 1] if idx < len(guides) - 1 else None
-    # Related: same category first, then the rest, up to 3.
-    same = [x for x in guides if x is not g and x["category"] == g["category"]]
-    other = [x for x in guides if x is not g and x["category"] != g["category"]]
-    related = (same + other)[:3]
+    # Related: an explicit list on the guide wins (used where the category
+    # has only one guide and list order would pick unrelated ones); then
+    # same category first, then the rest, up to 3.
+    by_slug = {x["slug"]: x for x in guides}
+    picked = [by_slug[s] for s in g.get("related", []) if s in by_slug and by_slug[s] is not g]
+    rest = [x for x in guides if x is not g and x not in picked]
+    same = [x for x in rest if x["category"] == g["category"]]
+    other = [x for x in rest if x["category"] != g["category"]]
+    related = (picked + same + other)[:3]
     tool_box = ""
     if g.get("tool"):
         tname, turl = TOOLS[g["tool"]]
@@ -379,10 +384,10 @@ def home_body(guides):
 <p class="lede">Plain, practical how-to guides for the problems that land at
 11 pm: PDFs that will not behave, photos that need saving, audio full of
 hiss, videos to cut down, leads to find, emails to answer, a CV to write,
-a link you are not sure about. No jargon, no hype, no paid tricks. Just
-the steps that work — each one tested against the real tool it recommends,
-with the test written on the page.</p>
-<p class="colophon">{n} guides &middot; tested 11 Nov 2026 &middot; no accounts,
+an assignment to check, a link you are not sure about. No jargon, no hype,
+no paid tricks. Just the steps that work — each one tested against the real
+tool it recommends, with the test written on the page.</p>
+<p class="colophon">{n} guides &middot; tested Nov 2026 &middot; no accounts,
 no tracking, no ads yet</p>
 </section>
 <section class="start-here">
@@ -593,10 +598,10 @@ def main():
         "@type": "WebSite",
         "name": "SolutionHub",
         "url": SITE_URL + "/",
-        "description": "Plain, practical how-to guides for everyday problems: PDFs, photos, audio, video, leads, emails, CVs and online safety.",
+        "description": "Plain, practical how-to guides for everyday problems: PDFs, photos, audio, video, leads, emails, CVs, assignments and online safety.",
     }
     home = page("SolutionHub — Plain, Practical How-To Guides",
-                "SolutionHub publishes plain, practical how-to guides for everyday problems: PDFs, photos, audio, video, leads, emails, CVs and online safety.",
+                "SolutionHub publishes plain, practical how-to guides for everyday problems: PDFs, photos, audio, video, leads, emails, CVs, assignments and online safety.",
                 home_body(guides), "index.html", SITE_URL + "/",
                 json_ld=home_ld, wide=True)
     write("index.html", home)
@@ -613,7 +618,7 @@ def main():
                 + contents_by_category(guides)
                 + '<script src="/assets/guides-search.js" defer></script>')
     write("guides/index.html", page("All Guides | SolutionHub",
-          f"Browse all {n} SolutionHub guides: PDFs, photos, audio, video, business leads, emails, CVs and online safety.",
+          f"Browse all {n} SolutionHub guides: PDFs, photos, audio, video, business leads, emails, CVs, assignments and online safety.",
           idx_body, "guides/index.html", SITE_URL + "/guides/", wide=True))
     # Guide pages
     for g in guides:

@@ -1098,7 +1098,7 @@ short honest CV beats a padded one.</p>
         "category": "Safety",
         "tool": None,
         "published": "2026-11-11",
-        "modified": "2026-11-18",
+        "modified": "2026-11-23",
         "tested_date": "11 Nov 2026",
         "tested_tool": "Your own browser — no tool needed",
         "tested_result": "Hover-to-preview showed the real destination in Chrome, Edge, Firefox and Safari.",
@@ -1199,6 +1199,137 @@ HTTPS too. A padlock does not prove the site is honest.</p>
 <h3>What is the one rule to remember?</h3>
 <p>Never log in or pay through a link in a message. Go to the real site
 yourself. That one habit stops almost every phishing attack.</p>
+</div>
+""",
+        "related": ["find-business-leads-free", "follow-up-email-replies", "professional-cv-free"],
+    },
+    {
+        "slug": "check-assignment-for-ai",
+        "title": "How to Check Your Assignment for AI Writing Before You Submit It",
+        "description": "Teachers run student work through AI checkers. Check your own assignment first, read the score honestly, and fix the patterns that make text look machine-made.",
+        "category": "Study",
+        "tool": "sah",
+        "published": "2026-11-23",
+        "modified": "2026-11-23",
+        "tool_url": "https://student-assignment-helper.vercel.app/ai-checker",
+        "tested_date": "23 Nov 2026",
+        "tested_tool": "Student Assignment Helper — AI Checker",
+        "tested_result": "Two live checks: a paragraph packed with stock phrases scored 36 (Mixed), with seven flagged phrases named; plain personal writing scored 12 (Likely human-written).",
+        "tested_limit": "It is a heuristic estimate, not a detector. Short samples are hard to judge, and no score proves who wrote a text.",
+        "related": ["professional-cv-free", "follow-up-email-replies", "generate-ai-images-free"],
+        "body": """
+<p>More and more teachers run student work through AI checkers before they
+read it. A high "AI-written" score can mean extra questions, a lower mark,
+or a request to rewrite — even when you wrote every word yourself. The
+problem is that checkers do not detect AI. They guess, from patterns: the
+same sentence length again and again, the same stock phrases, perfect
+grammar with no personal detail. If your writing has those patterns, it can
+look machine-made whether a machine wrote it or not.</p>
+<p>This guide shows you how to check your own assignment before you submit
+it, read the score honestly, and fix the patterns that make text look
+AI-written. It takes five minutes. It will not turn AI-written work
+into your own — nothing can, and no honest guide would promise that. It
+makes your own writing read like a person wrote it.</p>
+<h2>What you need</h2>
+<ul>
+<li>The assignment text, finished or nearly finished.</li>
+<li>About five minutes, and a willingness to rewrite a few sentences.</li>
+<li>No account and nothing to install — the checker runs free in your browser.</li>
+</ul>
+<p>Check the whole assignment, not just one paragraph. Short
+samples are hard to judge — a checker can only work with what you give it,
+and thirty words tell it almost nothing.</p>
+<h2>Step 1: Paste your text into the free checker</h2>
+<p>Open the AI Checker on the Student Assignment Helper site. Paste your text
+— at least 30 characters, up to 30,000 — and run the check. No upload, no
+account. The tool is a local heuristic: it looks for the
+patterns AI writing usually has, and gives you a score with the reasons
+behind it.</p>
+<h2>Step 2: Read the score and the reasons, not just the number</h2>
+<p>You get a score and a verdict — "Likely human-written", "Mixed — some
+AI-like patterns", "Likely AI-written" or "Very likely AI-written". The
+number alone tells you little. Read the reasons: they name the exact phrases
+the checker flagged — words like "moreover", "furthermore", "in
+conclusion", "it is important to note", "crucial", "pivotal", "utilize" —
+and whether your sentences are all the same length. Those reasons are your
+to-do list.</p>
+<p>When we tested the checker, a paragraph packed with those stock phrases
+scored 36, "Mixed", with seven flagged phrases listed by name. The same
+length of plain, personal writing — short sentences, a place name, a detail
+only the writer would know — scored 12, "Likely human-written". The
+difference was not the topic. It was the patterns.</p>
+<h2>Step 3: Cut the stock phrases</h2>
+<p>Delete the phrases the checker flagged, and do not replace them with other
+stock phrases. "Moreover" can usually be deleted entirely — the next
+sentence makes the point on its own. "In conclusion" can go; the last
+paragraph is obviously the conclusion. "It is important to note that" can be
+cut to nothing, and the sentence underneath gets stronger. "Utilize" is just
+"use". "Crucial" and "pivotal" are words people almost never say out loud —
+if you would not say it to a friend, do not write it in an assignment.</p>
+<h2>Step 4: Vary your sentence lengths</h2>
+<p>AI writing loves medium sentences, one after another, all about the same
+length. Real writing mixes them. Break one long sentence into two short
+ones. Then let one sentence run a little longer, because it carries a full
+thought. A very short sentence — three to seven words — wakes the reader up.
+Read the paragraph aloud: if every sentence lands with the same rhythm,
+rewrite two of them.</p>
+<h2>Step 5: Add one detail only you would know</h2>
+<p>The strongest sign of human writing is a specific detail. A place, a
+number, a name, a moment — "our school had one computer room with ten old
+PCs" beats "the institution possessed limited technological resources" every
+time. No story needed on every line. One real detail per paragraph
+is enough to break the pattern, and it makes the writing better in its own
+right: markers remember specific work.</p>
+<h2>Step 6: Check again, then stop</h2>
+<p>Paste the revised text and check once more. If the score fell and the
+flagged phrases are gone, submit it. Do not chase a perfect score —
+rewriting until the number hits zero usually makes the writing worse, not
+better. One check, one fix, one re-check is enough.</p>
+<h2>What this cannot do</h2>
+<p>No checker can prove who wrote a text, and no score is a verdict. A low
+score does not prove you wrote it, and a high score does not prove you did
+not. Teachers know this, and the honest ones treat a score as a reason to
+talk, not as proof. This guide cannot make AI-written work yours, either.
+If a machine wrote your assignment, the honest fix is to write it yourself
+— the checker only helps you polish writing that is already yours.</p>
+<p>The checker also struggles with short texts and with technical writing,
+where standard phrases are normal. A lab report full of standard terms will
+always look more "AI-like" than a personal essay. Judge the reasons, not
+just the number.</p>
+<h2>Tips for writing that reads human</h2>
+<ul>
+<li><strong>Write the first draft in your own words, fast.</strong> Do not
+polish as you go. Polishing too early is what produces the stiff,
+stock-phrase style checkers flag.</li>
+<li><strong>Use contractions.</strong> "Don't", "can't" and "it's" read like
+a person. Formal writing without a single contraction reads like a manual.</li>
+<li><strong>Keep every fact the same.</strong> When you rewrite a sentence,
+keep the numbers, names and dates exactly as they were. Changing facts to
+sound natural is worse than sounding stiff.</li>
+<li><strong>Read it aloud.</strong> If a sentence sounds strange spoken, it
+reads strange too. Your ear catches robotic phrasing faster than your eye.</li>
+<li><strong>Keep your own voice in the final draft.</strong> The goal is not
+to sound like nobody. It is to sound like you.</li>
+</ul>
+<p class="see-also"><strong>Related guides:</strong> <a href="/guides/professional-cv-free.html">How to Make a Professional CV for Free</a> &middot; <a href="/guides/follow-up-email-replies.html">How to Write a Follow-Up Email That Gets Replies</a> &middot; <a href="/guides/generate-ai-images-free.html">How to Generate AI Images for Free</a></p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<h3>Will a low score guarantee my teacher accepts my work?</h3>
+<p>No. A score is an estimate from one tool, and your teacher may use a
+different one — or none at all. A low score helps, but clear, specific,
+well-argued writing is what actually earns the mark.</p>
+<h3>Can I just run AI-written text through a humanizer and submit it?</h3>
+<p>You can, but you should not. Submitting work you did not write as your
+own is plagiarism at most schools, and a humanizer does not change that.
+Use the humanizer on your own drafts, to fix stiff phrasing — not to
+disguise work that is not yours.</p>
+<h3>Why does my own writing score high sometimes?</h3>
+<p>Because formal school writing and AI writing share the same habits: stock
+phrases, even sentence lengths, no personal detail. That is exactly what
+this guide fixes — and it is why the reasons matter more than the number.</p>
+<h3>Is the checker free?</h3>
+<p>Yes. The AI Checker is free in your browser, with no account. Paste up to
+30,000 characters and you get a score, a verdict and the reasons behind it.</p>
 </div>
 """,
     },
